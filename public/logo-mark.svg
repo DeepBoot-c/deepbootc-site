@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+
+  <!-- Outer hexagon (pointed top), filled navy -->
+  <polygon points="150,12 271,81 271,219 150,288 29,219 29,81" fill="#0d1f3c"/>
+
+  <!-- Outer border -->
+  <polygon points="150,12 271,81 271,219 150,288 29,219 29,81"
+    fill="none" stroke="#b8c6d8" stroke-width="3.5"/>
+
+  <!-- Inner ring -->
+  <polygon points="150,26 259,89 259,211 150,274 41,211 41,89"
+    fill="none" stroke="#b8c6d8" stroke-width="1.5" opacity="0.45"/>
+
+  <!-- Arc path for curved top text -->
+  <defs>
+    <path id="topArc" d="M 62,95 A 108 108 0 0 1 238,95"/>
+  </defs>
+
+  <!-- DEEPBOOT.C curved at top -->
+  <text
+    font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+    font-size="14" font-weight="700"
+    fill="#b8c6d8" letter-spacing="3.5">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">DEEPBOOT.C</textPath>
+  </text>
+
+  <!-- Mast -->
+  <line x1="150" y1="110" x2="150" y2="200"
+    stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Mainsail -->
+  <path d="
+    M 150,114
+    L 150,200
+    C 184,200 210,188 216,173
+    C 195,138 172,116 150,114
+    Z
+  " fill="#ffffff"/>
+
+  <!-- Jib -->
+  <path d="M 150,135 L 150,200 L 98,200 Z" fill="#ffffff"/>
+
+  <!-- Hull -->
+  <path d="M 97,200 C 112,225 188,225 203,200 Z" fill="#ffffff"/>
+
+  <!-- Waterline with left curl -->
+  <path d="M 245,200 L 65,200 C 57,200 51,194 54,188"
+    fill="none" stroke="#b8c6d8" stroke-width="2" stroke-linecap="round" opacity="0.75"/>
+
+  <!-- Wave lines at bottom -->
+  <path d="M 57,232 Q 82,223 107,232 Q 132,241 157,232 Q 182,223 207,232 Q 230,241 246,233"
+    fill="none" stroke="#b8c6d8" stroke-width="1.5" opacity="0.4"/>
+  <path d="M 62,252 Q 92,243 122,252 Q 152,261 182,252 Q 212,243 240,252"
+    fill="none" stroke="#b8c6d8" stroke-width="1.5" opacity="0.25"/>
+
+</svg>
