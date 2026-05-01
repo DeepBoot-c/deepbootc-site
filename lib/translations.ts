@@ -79,7 +79,42 @@ export const translations = {
         tools: "Tools",
         about: "About",
         contact: "Contact",
+        terms: "Terms & Conditions",
       },
+    },
+    terms: {
+      title: "Terms & Conditions",
+      subtitle: "Last updated: May 2026",
+      sections: [
+        {
+          heading: "1. About DeepBoot.C",
+          body: "DeepBoot.C is a Dutch company that develops AI-powered software tools for businesses. Our services are provided via deepbootc.com and related subdomains.",
+        },
+        {
+          heading: "2. Use of our tools",
+          body: "Our tools are intended for legitimate business use only. You may not use our services for illegal purposes, to harm others, or to violate the rights of third parties. We reserve the right to suspend access if these terms are violated.",
+        },
+        {
+          heading: "3. Intellectual property",
+          body: "All content on this website, including text, logos, and software, is the property of DeepBoot.C. You may not copy, reproduce, or redistribute any content without prior written permission.",
+        },
+        {
+          heading: "4. Privacy & data",
+          body: "We process personal data in accordance with the General Data Protection Regulation (GDPR). For questions about your data, contact us at deepboot.c@gmail.com.",
+        },
+        {
+          heading: "5. Limitation of liability",
+          body: "DeepBoot.C is not liable for any indirect or consequential damages arising from the use of our services. Our tools are provided 'as is' without warranty of any kind.",
+        },
+        {
+          heading: "6. Governing law",
+          body: "These terms are governed by Dutch law. Any disputes will be submitted to the competent court in the Netherlands.",
+        },
+        {
+          heading: "7. Contact",
+          body: "For questions about these terms, email us at deepboot.c@gmail.com.",
+        },
+      ],
     },
   },
 
@@ -161,7 +196,42 @@ export const translations = {
         tools: "Tools",
         about: "Over ons",
         contact: "Contact",
+        terms: "Algemene Voorwaarden",
       },
+    },
+    terms: {
+      title: "Algemene Voorwaarden",
+      subtitle: "Laatste update: mei 2026",
+      sections: [
+        {
+          heading: "1. Over DeepBoot.C",
+          body: "DeepBoot.C is een Nederlands bedrijf dat AI-aangedreven softwaretools ontwikkelt voor ondernemers en bedrijven. Onze diensten worden aangeboden via deepbootc.com en gerelateerde subdomeinen.",
+        },
+        {
+          heading: "2. Gebruik van onze tools",
+          body: "Onze tools zijn uitsluitend bedoeld voor legitiem zakelijk gebruik. U mag onze diensten niet gebruiken voor illegale doeleinden, om anderen te schaden, of om de rechten van derden te schenden. Wij behouden ons het recht voor de toegang op te schorten bij overtreding van deze voorwaarden.",
+        },
+        {
+          heading: "3. Intellectueel eigendom",
+          body: "Alle inhoud op deze website, inclusief tekst, logo's en software, is eigendom van DeepBoot.C. U mag geen inhoud kopiëren, reproduceren of verspreiden zonder voorafgaande schriftelijke toestemming.",
+        },
+        {
+          heading: "4. Privacy en gegevens",
+          body: "Wij verwerken persoonsgegevens in overeenstemming met de Algemene Verordening Gegevensbescherming (AVG). Voor vragen over uw gegevens kunt u contact opnemen via deepboot.c@gmail.com.",
+        },
+        {
+          heading: "5. Aansprakelijkheid",
+          body: "DeepBoot.C is niet aansprakelijk voor indirecte of gevolgschade die voortvloeit uit het gebruik van onze diensten. Onze tools worden aangeboden 'zoals ze zijn', zonder enige garantie.",
+        },
+        {
+          heading: "6. Toepasselijk recht",
+          body: "Op deze voorwaarden is Nederlands recht van toepassing. Geschillen worden voorgelegd aan de bevoegde rechter in Nederland.",
+        },
+        {
+          heading: "7. Contact",
+          body: "Voor vragen over deze voorwaarden kunt u ons bereiken via deepboot.c@gmail.com.",
+        },
+      ],
     },
   },
 } as const;

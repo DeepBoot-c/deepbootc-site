@@ -47,6 +47,9 @@ export default function Footer() {
           <Link href="/contact" style={{ color: "#4a6080", textDecoration: "none", fontSize: "14px" }}>
             {t.footer.links.contact}
           </Link>
+          <Link href="/voorwaarden" style={{ color: "#4a6080", textDecoration: "none", fontSize: "14px" }}>
+            {t.footer.links.terms}
+          </Link>
         </div>
 
         {/* Contact */}
