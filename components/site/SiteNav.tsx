@@ -34,7 +34,7 @@ export default function SiteNav({ home = true }: { home?: boolean }) {
       <div className="nav__in">
         <Link href="/" className="nav__brand" aria-label="DeepBoot.C, home">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/badge-v2.png" width="26" height="30" alt="" />
+          <img src="/badge-v3.png" width="26" height="30" alt="" />
           <span>DeepBoot<b>.C</b></span>
         </Link>
         <nav className="nav__links" aria-label="Hoofdmenu">

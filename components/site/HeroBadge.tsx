@@ -52,11 +52,11 @@ export default function HeroBadge() {
             <div className="hero__obj">
               <div className="hero__badge">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/badge-v2.png" width="600" height="686" alt="" />
+                <img src="/badge-v3.png" width="564" height="649" alt="" />
                 <span className="hero__sheen" />
               </div>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img className="hero__reflect" src="/badge-v2.png" width="600" height="686" alt="" />
+              <img className="hero__reflect" src="/badge-v3.png" width="564" height="649" alt="" />
             </div>
             <svg className="hero__ring" viewBox="0 0 200 230"><polygon points="100,4 196,59 196,171 100,226 4,171 4,59" /></svg>
           </div>

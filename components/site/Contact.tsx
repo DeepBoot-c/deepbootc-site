@@ -52,7 +52,7 @@ export default function Contact({ standalone = false }: { standalone?: boolean }
       <footer className="sc-wrap foot">
         <div className="foot__brand">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/badge-v2.png" width="24" height="28" alt="" />
+          <img src="/badge-v3.png" width="24" height="28" alt="" />
           <span>DeepBoot<b>.C</b></span>
           <span className="foot__tag">{c.foot.tag}</span>
         </div>
