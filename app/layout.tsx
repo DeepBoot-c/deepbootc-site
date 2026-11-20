@@ -1,12 +1,12 @@
 import type { Metadata, Viewport } from "next";
-import { Archivo, Geist } from "next/font/google";
+import { Source_Serif_4, Instrument_Sans } from "next/font/google";
 import "./scrollcraft.css";
 import "./globals.css";
 import Providers from "@/components/Providers";
 
-// Archivo (met breedte-as) voor koppen: nautische signalering. Geist voor lopende tekst.
-const archivo = Archivo({ subsets: ["latin"], axes: ["wdth"], variable: "--font-archivo", display: "swap" });
-const geist = Geist({ subsets: ["latin"], variable: "--font-geist", display: "swap" });
+// Source Serif 4 (met optische grootte) voor koppen: rustig en klassiek. Instrument Sans voor lopende tekst.
+const serif = Source_Serif_4({ subsets: ["latin"], axes: ["opsz"], style: ["normal", "italic"], variable: "--font-serif", display: "swap" });
+const sans = Instrument_Sans({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.deepbootc.com"),
@@ -25,13 +25,13 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#07080A",
+  themeColor: "#F3F4F2",
   viewportFit: "cover",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="nl" className={`${archivo.variable} ${geist.variable}`}>
+    <html lang="nl" className={`${serif.variable} ${sans.variable}`}>
       <body>
         <Providers>{children}</Providers>
       </body>

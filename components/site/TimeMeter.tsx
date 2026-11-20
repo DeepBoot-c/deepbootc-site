@@ -52,7 +52,7 @@ export default function TimeMeter() {
         <svg viewBox="0 0 200 224" aria-hidden="true">
           <defs>
             <linearGradient id="meter-chrome" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stopColor="#F4F7FA" /><stop offset="0.45" stopColor="#9AA6B2" /><stop offset="0.7" stopColor="#E3E8ED" /><stop offset="1" stopColor="#6E7A87" />
+              <stop offset="0" stopColor="#111A24" /><stop offset="0.45" stopColor="#3E5064" /><stop offset="0.7" stopColor="#1D3B5C" /><stop offset="1" stopColor="#111A24" />
             </linearGradient>
           </defs>
           <polygon points={HEX} className="meter__track" />
