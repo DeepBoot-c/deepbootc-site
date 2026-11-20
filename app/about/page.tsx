@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import SiteNav from "@/components/site/SiteNav";
-import Anchor from "@/components/site/Anchor";
+import Contact from "@/components/site/Contact";
 import { useLanguage } from "@/lib/context/LanguageContext";
 import { useScrollCraft } from "@/lib/useScrollCraft";
 
@@ -12,9 +12,9 @@ export default function AboutPage() {
   useScrollCraft(root);
   return (
     <>
-      <SiteNav depth={false} />
+      <SiteNav home={false} />
       <main ref={root}>
-        <section className="page g-above" data-sc-act="flow">
+        <section className="page" data-sc-act="flow">
           <div className="sc-wrap">
             <div className="page__head" data-sc-in>
               <h1 className="h-lg">{c.about.title}</h1>
@@ -27,7 +27,7 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
-        <Anchor standalone />
+        <Contact standalone />
       </main>
     </>
   );

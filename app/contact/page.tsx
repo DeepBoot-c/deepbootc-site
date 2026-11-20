@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import SiteNav from "@/components/site/SiteNav";
-import Anchor from "@/components/site/Anchor";
+import Contact from "@/components/site/Contact";
 import { useScrollCraft } from "@/lib/useScrollCraft";
 
 export default function ContactPage() {
@@ -10,9 +10,9 @@ export default function ContactPage() {
   useScrollCraft(root);
   return (
     <>
-      <SiteNav depth={false} />
+      <SiteNav home={false} />
       <main ref={root}>
-        <Anchor standalone />
+        <Contact standalone />
       </main>
     </>
   );

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "Wij bouwen websites voor kleine ondernemers en AI-hulpjes die terugkerend werk overnemen. Uit Nederland, persoonlijk en zonder gedoe.",
   openGraph: {
     title: "DeepBoot.C · Websites en AI-automatisering",
-    description: "Wij bouwen wat boven water komt. En wat eronder het werk doet.",
+    description: "Websites en AI die voor uw bedrijf werken.",
     url: "https://www.deepbootc.com",
     siteName: "DeepBoot.C",
     locale: "nl_NL",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#E4EAEF",
+  themeColor: "#07080A",
   viewportFit: "cover",
 };
 

@@ -5,10 +5,10 @@ import Link from "next/link";
 import { useLanguage } from "@/lib/context/LanguageContext";
 import { CONTACT } from "@/lib/copy";
 
-// De close: het anker ligt op de bodem, met de plaat "Plan een gesprek" en de directe lijnen.
-export default function Anchor({ standalone = false }: { standalone?: boolean }) {
+// De close: kennismaken. Formulier (opent mail met het bericht klaar) en de directe lijnen. Footer zit erin.
+export default function Contact({ standalone = false }: { standalone?: boolean }) {
   const { c, lang, setLang } = useLanguage();
-  const A = c.anchor;
+  const A = c.contact;
   const [f, setF] = useState({ name: "", contact: "", when: A.whenOpts[3], msg: "" });
   const [err, setErr] = useState("");
 
@@ -20,32 +20,17 @@ export default function Anchor({ standalone = false }: { standalone?: boolean })
     window.location.href = `mailto:${CONTACT.email}?subject=${encodeURIComponent(A.mailSubject)}&body=${encodeURIComponent(body)}`;
   }
 
-  const year = new Date().getFullYear();
   return (
-    <section id="contact" className={`anchor g-floor${standalone ? " anchor--page" : ""}`} data-sc-act="flow" data-layer="anchor" aria-labelledby="anchor-title">
-      <div className="anchor__rope" aria-hidden="true" />
-      <div className="sc-wrap anchor__grid">
-        <div className="anchor__intro" data-sc-in>
-          <svg className="anchor__icon" viewBox="0 0 120 150" aria-hidden="true">
-            <defs>
-              <linearGradient id="anc" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="120" y2="0">
-                <stop offset="0" stopColor="#5D6C7E" /><stop offset="0.5" stopColor="#C8D1DA" /><stop offset="1" stopColor="#56657A" />
-              </linearGradient>
-            </defs>
-            <g fill="none" stroke="url(#anc)" strokeWidth="9" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="60" cy="18" r="11" />
-              <path d="M60 29 V128" />
-              <path d="M34 52 H86" />
-              <path d="M14 96 C 18 122, 40 134, 60 134 C 80 134, 102 122, 106 96" />
-              <path d="M14 96 L 6 108 M14 96 L 28 102 M106 96 L114 108 M106 96 L92 102" />
-            </g>
-          </svg>
-          <h2 id="anchor-title" className="h-lg">{A.title}</h2>
+    <section id="contact" className={`contact${standalone ? " contact--page" : ""}`} data-sc-act="flow" aria-labelledby="contact-title">
+      <div className="contact__glow" aria-hidden="true" />
+      <div className="sc-wrap contact__grid">
+        <div className="contact__intro" data-sc-in>
+          <h2 id="contact-title" className="h-lg">{A.title}</h2>
           <p className="lede">{A.lede}</p>
-          <ul className="anchor__direct" aria-label={A.direct}>
-            <li><a href={CONTACT.tel}><span className="anchor__k">{c.call}</span><span className="nums">{CONTACT.phoneIntl}</span></a></li>
-            <li><a href={`${CONTACT.whatsapp}?text=${encodeURIComponent(A.waText)}`} target="_blank" rel="noopener"><span className="anchor__k">{A.wa}</span><span className="nums">{CONTACT.phoneDisplay}</span></a></li>
-            <li><a href={`mailto:${CONTACT.email}`}><span className="anchor__k">{A.mail}</span><span>{CONTACT.email}</span></a></li>
+          <ul className="contact__direct" aria-label={A.direct}>
+            <li><a href={CONTACT.tel}><span className="contact__k">{c.call}</span><span className="nums">{CONTACT.phoneIntl}</span></a></li>
+            <li><a href={`${CONTACT.whatsapp}?text=${encodeURIComponent(A.waText)}`} target="_blank" rel="noopener"><span className="contact__k">{A.wa}</span><span className="nums">{CONTACT.phoneDisplay}</span></a></li>
+            <li><a href={`mailto:${CONTACT.email}`}><span className="contact__k">{A.mail}</span><span>{CONTACT.email}</span></a></li>
           </ul>
         </div>
 
@@ -59,7 +44,7 @@ export default function Anchor({ standalone = false }: { standalone?: boolean })
             </select>
           </label>
           <label>{A.msgL}<textarea name="bericht" rows={3} value={f.msg} onChange={(e) => setF({ ...f, msg: e.target.value })} /></label>
-          <button type="submit" className="btn btn--accent btn--wide">{c.cta}</button>
+          <button type="submit" className="btn btn--chrome btn--wide">{c.cta}</button>
           <p className="plate__note" role="status">{err || A.note}</p>
         </form>
       </div>
@@ -67,7 +52,7 @@ export default function Anchor({ standalone = false }: { standalone?: boolean })
       <footer className="sc-wrap foot">
         <div className="foot__brand">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo-mark.svg" width="28" height="28" alt="" />
+          <img src="/badge-v2.png" width="24" height="28" alt="" />
           <span>DeepBoot<b>.C</b></span>
           <span className="foot__tag">{c.foot.tag}</span>
         </div>
@@ -77,7 +62,7 @@ export default function Anchor({ standalone = false }: { standalone?: boolean })
           <Link href="/voorwaarden">{c.nav.terms}</Link>
           <button type="button" className="foot__lang" onClick={() => setLang(lang === "nl" ? "en" : "nl")}>{c.nav.lang}</button>
         </nav>
-        <p className="foot__small">© {year} DeepBoot.C · {c.foot.place} · {c.foot.rights}</p>
+        <p className="foot__small">© {new Date().getFullYear()} DeepBoot.C · {c.foot.place} · {c.foot.rights}</p>
       </footer>
     </section>
   );
