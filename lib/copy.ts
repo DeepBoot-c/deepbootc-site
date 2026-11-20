@@ -15,7 +15,8 @@ const nl = {
   call: "Bel",
   nav: { web: "Websites", ai: "AI", how: "Werkwijze", about: "Over ons", contact: "Contact", terms: "Algemene voorwaarden", home: "Home", lang: "English", langShort: "EN", menu: "Menu", close: "Sluiten" },
   hero: {
-    h1: "Websites en AI die voor uw bedrijf werken.",
+    h1: "Websites en AI die voor uw bedrijf",
+    h1em: "werken.",
     sub: "Wij bouwen websites voor ondernemers en AI-hulpjes die terugkerend werk overnemen. Persoonlijk, uit Nederland.",
     orCall: "of bel",
     tags: ["Websites", "AI-automatisering"],
@@ -98,7 +99,8 @@ const en: Copy = {
   call: "Call",
   nav: { web: "Websites", ai: "AI", how: "How it works", about: "About", contact: "Contact", terms: "Terms & conditions", home: "Home", lang: "Nederlands", langShort: "NL", menu: "Menu", close: "Close" },
   hero: {
-    h1: "Websites and AI that work for your business.",
+    h1: "Websites and AI that work for",
+    h1em: "your business.",
     sub: "We build websites for business owners and AI helpers that take over repetitive work. Personal, from the Netherlands.",
     orCall: "or call",
     tags: ["Websites", "AI automation"],
