@@ -101,7 +101,8 @@ p, h3 { margin: 0; }
   .nav__call span { display: none; }
   .nav .btn--sm { min-height: 44px; padding: 0 .95rem; }
 }
-@media (max-width: 400px) { .nav__brand span { display: none; } }
+/* tot 460px alleen het logo: anders loopt "DeepBoot.C" in de belknop */
+@media (max-width: 460px) { .nav__brand span { display: none; } }
 
 /* ---------------------------------------------------------------- hero -- */
 .hero { position: relative; }
