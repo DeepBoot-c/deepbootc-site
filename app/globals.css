@@ -166,9 +166,11 @@ p, h3 { margin: 0; }
   fill: none; stroke: rgb(232 170 120 / .3); stroke-width: .6; max-width: none;
   transform: translate3d(calc(var(--mx) * 22px), calc(var(--p) * -230px + var(--my) * 10px), 0) rotate(calc(var(--p) * 8deg));
 }
-.hero__copy { position: absolute; z-index: 5; left: max(var(--sc-gutter), calc((100vw - var(--sc-maxw)) / 2 + var(--sc-gutter))); top: 50%; width: min(40rem, calc(50vw - 5rem));
+/* de tekst eindigt altijd ruim vóór het paneel (dat begint op 50%) */
+.hero__copy { --hl: max(var(--sc-gutter), calc((100vw - var(--sc-maxw)) / 2 + var(--sc-gutter)));
+  position: absolute; z-index: 5; left: var(--hl); top: 50%; width: min(40rem, calc(50vw - var(--hl) - 3rem));
   transform: translate3d(0, calc(-50% + var(--p) * -60px), 0); }
-.hero__title { font-size: clamp(2.5rem, 1.3rem + 2.9vw, 4.1rem); font-weight: 500; letter-spacing: -0.022em; line-height: 1.04; }
+.hero__title { font-size: clamp(2.3rem, 1.1rem + 2.7vw, 3.9rem); font-weight: 500; letter-spacing: -0.022em; line-height: 1.04; }
 .hero__title em { font-style: italic; color: var(--copper-ink); }
 .hero__sub { margin-top: 1.4rem; font-size: var(--sc-t-lg); line-height: 1.55; color: var(--sc-ink-soft); max-width: 36ch; }
 .hero__actions { margin-top: 2rem; display: flex; align-items: center; gap: 1.4rem; flex-wrap: wrap; }
