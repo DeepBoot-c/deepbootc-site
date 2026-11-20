@@ -7,7 +7,6 @@ import TimeMeter from "@/components/site/TimeMeter";
 import Contact from "@/components/site/Contact";
 import { useLanguage } from "@/lib/context/LanguageContext";
 import { useScrollCraft } from "@/lib/useScrollCraft";
-import { CONTACT } from "@/lib/copy";
 
 export default function Home() {
   const { c } = useLanguage();
@@ -75,9 +74,6 @@ export default function Home() {
                       <span className="tool__st"><i aria-hidden="true" />{c.ai.status[it.st as "live" | "dev" | "custom"]}</span>
                     </div>
                     <p className="tool__what">{it.what}</p>
-                    {"href" in it && it.href === "law" && (
-                      <a className="tool__link" href={CONTACT.law} target="_blank" rel="noopener">{c.ai.open} <span aria-hidden="true">↗</span></a>
-                    )}
                   </div>
                 </li>
               ))}

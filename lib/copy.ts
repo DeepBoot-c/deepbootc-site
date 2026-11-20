@@ -6,7 +6,6 @@ export const CONTACT = {
   tel: "tel:+31657090070",
   whatsapp: "https://wa.me/31657090070",
   email: "deepboot.c@gmail.com",
-  law: "https://www.lawsummarizer.com",
 };
 
 export const WORKWEEKS = 46; // aanname voor de tijdmeter, staat ook zichtbaar bij de uitkomst
@@ -41,12 +40,10 @@ const nl = {
     title: "AI die het saaie werk doet.",
     lede: "Terugkerende klussen slokken uren op. Wij bouwen AI-hulpjes die ze overnemen. Niets gaat de deur uit zonder uw akkoord.",
     status: { live: "Live", dev: "In ontwikkeling", custom: "Op maat" },
-    open: "Open de tool",
     items: [
       { name: "Mail-assistent", st: "dev", what: "Reserveringen, leveranciersmails en gastvragen: in uw toon beantwoord, verstuurd na uw akkoord." },
       { name: "Agenda-planner", st: "dev", what: "Afspraken, herinneringen en beschikbaarheid op één plek, automatisch bijgewerkt." },
       { name: "Financieel overzicht", st: "dev", what: "Inkomsten, uitgaven en een vooruitblik op uw kas, zonder spreadsheet-gepuzzel." },
-      { name: "Law Summarizer", st: "live", what: "Juridische teksten samengevat, met IRAC-analyse en kernbegrippen. Voor rechtenstudenten en juristen.", href: "law" },
       { name: "Uw eigen klus", st: "custom", what: "Iets dat u elke week met de hand doet? Vertel het ons. We kijken samen of het slimmer kan." },
     ],
   },
@@ -126,12 +123,10 @@ const en: Copy = {
     title: "AI that does the boring work.",
     lede: "Repetitive tasks eat hours. We build AI helpers that take them over. Nothing goes out without your approval.",
     status: { live: "Live", dev: "In development", custom: "Custom" },
-    open: "Open the tool",
     items: [
       { name: "Email assistant", st: "dev", what: "Bookings, supplier emails and guest questions: answered in your voice, sent after your approval." },
       { name: "Calendar planner", st: "dev", what: "Appointments, reminders and availability in one place, updated automatically." },
       { name: "Financial overview", st: "dev", what: "Income, expenses and a look ahead at your cash, without spreadsheet puzzles." },
-      { name: "Law Summarizer", st: "live", what: "Legal texts summarised, with IRAC analysis and key terms. For law students and lawyers.", href: "law" },
       { name: "Your own task", st: "custom", what: "Something you do by hand every week? Tell us. We will look together at whether it can be smarter." },
     ],
   },

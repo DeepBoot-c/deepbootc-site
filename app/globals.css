@@ -199,9 +199,7 @@ p, h3 { margin: 0; }
 /* ------------------------------------------------------------------ AI -- */
 .ai { padding-block: var(--sc-section); background: linear-gradient(180deg, transparent, #0A0C0F 18%, #0A0C0F 82%, transparent); }
 .tools { list-style: none; margin: clamp(2.5rem, 5vw, 4rem) 0 0; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; }
-.tool { grid-column: span 2; }
-.tool:nth-child(4) { grid-column: span 3; }
-.tool:nth-child(5) { grid-column: span 3; }
+.tool { grid-column: span 3; }
 .tool__in { height: 100%; padding: 1.35rem 1.4rem 1.5rem; border-radius: 14px; background: linear-gradient(180deg, #11151A, #0C0F12); border: 1px solid var(--line); box-shadow: inset 0 1px 0 rgb(255 255 255 / .05); display: grid; align-content: start; gap: .6rem; }
 .tool--live .tool__in { border-color: rgb(220 227 234 / .28); background: linear-gradient(180deg, #161B21, #0E1216); }
 .tool__top { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
@@ -212,8 +210,7 @@ p, h3 { margin: 0; }
 .tool--custom .tool__st { color: #DCE3EA; } .tool--custom .tool__st i { background: var(--chrome); }
 .tool__what { color: var(--sc-ink-soft); }
 .tool__link { justify-self: start; margin-top: .3rem; color: #E6EAEE; font-weight: 600; }
-@media (max-width: 960px) { .tools { grid-template-columns: 1fr 1fr; } .tool, .tool:nth-child(4), .tool:nth-child(5) { grid-column: span 1; } .tool:nth-child(5) { grid-column: span 2; } }
-@media (max-width: 620px) { .tools { grid-template-columns: 1fr; } .tool:nth-child(5) { grid-column: span 1; } }
+@media (max-width: 620px) { .tools { grid-template-columns: 1fr; } .tool { grid-column: span 1; } }
 
 /* tijdmeter */
 .meter { margin-top: clamp(3rem, 6vw, 5rem); display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 1.5rem clamp(2rem, 5vw, 5rem); padding: clamp(1.5rem, 4vw, 3rem); border-radius: 20px; border: 1px solid var(--line-2); background: radial-gradient(80% 120% at 85% 40%, #161B21, #0B0D10 70%); box-shadow: inset 0 1px 0 rgb(255 255 255 / .06), 0 40px 80px -40px rgb(0 0 0 / .9); }
